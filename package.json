@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "postbuild": "cpy \"dist/index.html\" dist --rename=404.html"
+    "postbuild": "node ./scripts/create-404.js",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

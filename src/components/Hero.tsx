@@ -29,16 +29,15 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-gradient">Hello, I'm</span>
             <br />
-            <span className="text-foreground">Your Name</span>
+            <span className="text-foreground">Varad Mashalkar</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Full-Stack Developer & Creative Problem Solver
+            Software Developer | AI & Computer Vision Enthusiast | Problem Solver
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            I craft digital experiences that blend beautiful design with powerful functionality. 
-            Passionate about creating solutions that make a difference.
+            Turning ideas into intelligent, scalable software — from digital payments to computer vision innovation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -52,16 +51,45 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex gap-6 justify-center mb-16">
-            <Button variant="ghost" size="sm" className="transition-smooth hover:text-primary hover:shadow-primary">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="sm" className="transition-smooth hover:text-primary hover:shadow-primary">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="sm" className="transition-smooth hover:text-primary hover:shadow-primary">
-              <Mail className="h-5 w-5" />
-            </Button>
+            <a
+              href="https://github.com/VaradMash"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                size="sm"
+                className="transition-smooth hover:text-primary hover:shadow-primary"
+              >
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/varad-mashalkar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                size="sm"
+                className="transition-smooth hover:text-primary hover:shadow-primary"
+              >
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
+
+            <a href="mailto:varadmash2201@gmail.com">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="transition-smooth hover:text-primary hover:shadow-primary"
+              >
+                <Mail className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
+
 
           {/* Scroll Indicator */}
           <div className="animate-bounce">

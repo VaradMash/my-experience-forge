@@ -5,49 +5,40 @@ import { Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Full-Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Leading development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and implementing best practices for code quality and performance.',
-      technologies: ['React', 'TypeScript', 'Node.js', 'AWS', 'PostgreSQL', 'Docker'],
+      title: 'Software Developer',
+      company: 'Sarvatra Technologies',
+      location: 'Pune, Maharashtra',
+      period: '08/2023 - Present',
+      description: 'Contributing to the development of India’s Central Bank Digital Currency (CBDC) platform under the RBI and NPCI initiative. Designing and developing scalable, low-latency microservices using Java, Spring Boot, and Oracle DB, ensuring high reliability and security in financial transactions. Collaborating across teams to integrate APIs and optimize system performance for large-scale transaction processing in a distributed cloud environment. Focused on code quality, automation, and simulating real-world scenarios to deliver robust, production-ready systems',
+      technologies: [ "Java", "Spring Boot", "RESTful APIs", "Oracle DB", "Gradle", "Git", "Linux", "JMeter"],
       current: true
     },
     {
-      title: 'Full-Stack Developer',
-      company: 'StartupXYZ',
+      title: 'Product Development and Computer Vision Intern',
+      company: 'AlgoAnalytics Private Limited',
       location: 'Remote',
-      period: '2020 - 2022',
-      description: 'Built and maintained multiple web applications from concept to deployment. Collaborated with design team to create intuitive user interfaces and implemented robust backend systems.',
-      technologies: ['Vue.js', 'Python', 'Django', 'MongoDB', 'Redis', 'Heroku'],
+      period: '09/2021 - 04/2022',
+      description: 'Developed an AI-based CCTV surveillance system using Python and OpenCV, integrated with a real-time, low-latency inferencing engine for live alert generation. Trained and optimized Tiny YOLO models on NVIDIA CUDA for object detection, and implemented data augmentation to prepare 7K+ samples. Delivered a lightweight, deployable desktop application compatible with low-end hardware and conducted on-site demonstrations.',
+      technologies: ['Python', 'OpenCV', 'MongoDB', 'TKinter', 'YOLO'],
       current: false
     },
     {
-      title: 'Frontend Developer',
-      company: 'Digital Agency Co.',
-      location: 'New York, NY',
-      period: '2019 - 2020',
-      description: 'Developed responsive websites and web applications for various clients. Focused on creating pixel-perfect implementations of design mockups with optimal performance.',
-      technologies: ['React', 'JavaScript', 'Sass', 'Webpack', 'GraphQL'],
-      current: false
-    },
-    {
-      title: 'Junior Developer',
-      company: 'WebTech Inc.',
-      location: 'Austin, TX',
-      period: '2018 - 2019',
-      description: 'Started my professional journey developing small web applications and contributing to larger projects. Gained experience in version control, testing, and agile development practices.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
+      title: 'Android Development Intern',
+      company: 'Zuv Foundation',
+      location: 'Remote',
+      period: '05/2021 - 07/2021',
+      description: 'Worked on development of Android application for Woman and Child safety',
+      technologies: ['Android', 'Firebase'],
       current: false
     }
   ];
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University of Technology',
-      period: '2014 - 2018',
-      description: 'Graduated Magna Cum Laude with focus on software engineering and web development.'
+      degree: 'Bachelor of Engineering',
+      school: 'Pune Institute of Computer Technology',
+      period: '2019 - 2023',
+      description: 'Graduated with a CGPA of 9.65 with an honors degree in Artificial Intelligence and Machine Learning'
     }
   ];
 

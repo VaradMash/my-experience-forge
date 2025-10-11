@@ -9,7 +9,12 @@ const Experience = () => {
       company: 'Sarvatra Technologies',
       location: 'Pune, Maharashtra',
       period: '08/2023 - Present',
-      description: 'Contributing to the development of India’s Central Bank Digital Currency (CBDC) platform under the RBI and NPCI initiative. Designing and developing scalable, low-latency microservices using Java, Spring Boot, and Oracle DB, ensuring high reliability and security in financial transactions. Collaborating across teams to integrate APIs and optimize system performance for large-scale transaction processing in a distributed cloud environment. Focused on code quality, automation, and simulating real-world scenarios to deliver robust, production-ready systems',
+      description: [
+        'Contributing to the development of India’s Central Bank Digital Currency (CBDC) platform under the RBI and NPCI initiative',
+        'Designing and developing scalable, low-latency microservices using Java, Spring Boot, and Oracle DB, ensuring high reliability and security in financial transactions',
+        'Collaborating across teams to integrate APIs and optimize system performance for large-scale transaction processing in a distributed cloud environment',
+        'Focused on code quality, automation, and simulating real-world scenarios to deliver robust, production-ready systems'
+      ],
       technologies: [ "Java", "Spring Boot", "RESTful APIs", "Oracle DB", "Gradle", "Git", "Linux", "JMeter"],
       current: true
     },
@@ -18,7 +23,11 @@ const Experience = () => {
       company: 'AlgoAnalytics Private Limited',
       location: 'Remote',
       period: '09/2021 - 04/2022',
-      description: 'Developed an AI-based CCTV surveillance system using Python and OpenCV, integrated with a real-time, low-latency inferencing engine for live alert generation. Trained and optimized Tiny YOLO models on NVIDIA CUDA for object detection, and implemented data augmentation to prepare 7K+ samples. Delivered a lightweight, deployable desktop application compatible with low-end hardware and conducted on-site demonstrations.',
+      description: [
+        'Developed an AI-based CCTV surveillance system using Python and OpenCV, integrated with a real-time, low-latency inferencing engine for live alert generation',
+        'Trained and optimized Tiny YOLO models on NVIDIA CUDA for object detection, and implemented data augmentation to prepare 7K+ samples',
+        'Delivered a lightweight, deployable desktop application compatible with low-end hardware and conducted on-site demonstrations.'
+      ],
       technologies: ['Python', 'OpenCV', 'MongoDB', 'TKinter', 'YOLO'],
       current: false
     },
@@ -27,7 +36,9 @@ const Experience = () => {
       company: 'Zuv Foundation',
       location: 'Remote',
       period: '05/2021 - 07/2021',
-      description: 'Worked on development of Android application for Woman and Child safety',
+      description: [
+        'Worked on development of Android application for Woman and Child safety'
+      ],
       technologies: ['Android', 'Firebase'],
       current: false
     }
@@ -83,7 +94,11 @@ const Experience = () => {
                       </div>
                     </div>
                     
-                    <p className="text-muted-foreground leading-relaxed mb-6">{exp.description}</p>
+                    <ul className="list-disc list-inside text-muted-foreground leading-relaxed mb-6">
+                      {exp.description.map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
+                    </ul>
                     
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech) => (
